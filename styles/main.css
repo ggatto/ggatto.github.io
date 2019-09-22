@@ -2,6 +2,20 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato|Skranji|Raleway");
+:root {
+  /* Fonts */
+  --heading-font: Skranji, sans-serif;
+  --footer-font: Raleway, Lato, Helvetica, sans-serif;
+  --paragraph-font: Raleway, Lato, Helvetica, sans-serif;
+
+  /* Colors */
+  --body-color: #000;
+  --heading-color: #fff;
+  --backgound-color: #24211c;
+  --font-backgound-color: #1094e0;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,16 +24,18 @@
 body {
   font-size: 16px;
   line-height: 32px;
-  font-family: sans-serif; /* Ubuntu, sans-serif */
-  color: #000; /* #xxxxxx */
+  font-family: var(--paragraph-font);
+  color: var(--body-color);
 }
 
 h1 {
+  font-family: var(--heading-font);
   font-size: 2.4rem /* x.xrem  (rem is a unit of measure) */;
-  color: #fff; /* #xxxxxx */
+  color: var(--heading-color);
 }
 
 h2 {
+  font-family: var(--heading-font);
   font-size: 2rem; /* x.xrem */
   text-align: center;
   border-bottom: 1px solid #bbb;
@@ -28,6 +44,7 @@ h2 {
 header,
 main,
 footer {
+  font-family: var(--footer-font);
   margin: 1.25rem auto;
   padding: 0.5rem;
   max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */
@@ -36,9 +53,8 @@ header,
 footer,
 footer a {
   text-align: center;
-  background-color: darkblue; /* */
-  color: whitesmoke;
-  /* Comment */
+  background-color: var(--backgound-color);
+  color: var(--font-backgound-color);
 }
 
 header img {
