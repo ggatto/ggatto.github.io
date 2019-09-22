@@ -36,16 +36,22 @@ h1 {
 
 h2 {
   font-family: var(--heading-font);
-  font-size: 2rem; /* x.xrem */
+  font-size: 1.7rem;
   text-align: center;
   border-bottom: 1px solid #bbb;
+}
+
+main h2 {
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 header,
 main,
 footer {
   font-family: var(--footer-font);
-  margin: 1.25rem auto;
+  margin: 1.25rem auto 0;
+  border-radius: 10px;
   padding: 0.5rem;
   max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */
 }
@@ -64,11 +70,19 @@ header img {
 }
 
 footer {
-  font-size: smaller; /* smaller */
+  font-size: smaller;
+  margin-top: 0;
 }
 
 ul {
   /* text-align: center; */
-  margin: 0 auto;
+  margin: 0 0 auto;
   max-width: 300px;
+}
+ul a:link {
+  color: #24211c;
+}
+
+ul a:visited {
+  color: var(--font-backgound-color);
 }
