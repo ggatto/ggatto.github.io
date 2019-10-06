@@ -1,0 +1,6 @@
+@media (0px > width <= 600px) {
+  .gridSections {
+    grid-template-columns: 1fr;
+    column-gap: 0.4em;
+  }
+}

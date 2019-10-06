@@ -1,0 +1,62 @@
+.gridSections {
+  display: grid;
+  min-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+}
+
+main {
+  padding-top: 0;
+  margin-top: 0; 
+}
+
+section {
+  margin: 0;
+  padding: 1%;
+  border-radius: 1.5em;
+  border: solid var(--backgound-color);
+  background-color: #2f3f6f;
+}
+
+section > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+  width: 90%;
+  align-self: center;
+}
+
+main > h1 {
+  margin: 4%;
+  padding: 0;
+  text-align: center;
+  color: var(--background-color);
+}
+
+section > h2 {
+  color: black;
+  padding: 0;
+  margin: 0.2em;
+  text-align: center;
+}
+
+section > h3 {
+  text-align: center;
+}
+section > h4 {
+  padding: 4%;
+  color: black;
+  text-align: center;
+}
+
+section p {
+  padding: 0.3em;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+section a {
+  color: #b5b6b7;
+  text-decoration: none;
+}
