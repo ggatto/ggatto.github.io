@@ -1,25 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Website Plan | Home</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
+    <meta charset="utf-8" />
+    <title>Lesson 2 | Design Principles</title>
+    <meta
+      name="description"
+      content="CIT 230 - Web Front-end Development | Lesson 2 | Design Principles"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/nav-bar.css" />
+    <link rel="stylesheet" href="/cit230/styles/cit230-main.css" />
+    <link rel="stylesheet" href="/cit230/lesson3/styles/lesson3.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="target-audience.html">Target Audience</a></li>
-          <li><a href="color-sheme.html">Color Scheme</a></li>
-          <li><a href="typography.html">Typography</a></li>
-        </ul>
-      </nav>
+      <img
+        src="https://avatars2.githubusercontent.com/u/36999488?v=4"
+        alt="Profile Picture"
+      />
+      <h1>Gilmar Gatto</h1>
+      <h2>BYU-Idaho</h2>
     </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Classes</a>
+          <div class="dropdown-content">
+            <a href="/cit230/index.html">CIT 230 | Web FrontEnd Design</a>
+            <a href="#"># | ########</a>
+            <a href="#"># | ########</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Lessons</a>
+          <div class="dropdown-content">
+            <a href="index.html">Lesson 1 | Home Page</a>
+            <a href="/cit230/lesson2/design-principles.html"
+              >Lesson 2 | Design Principles</a
+            >
+            <a href="/cit230/lesson3/index.html">Lesson 3 | Site Plan</a>
+            <a href="/cit230/lesson4/index.html">Lesson 4 | ########</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Lesson 3 - Site Plan</a>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="target-audience.html">Target Audience</a>
+            <a href="color-sheme.html">Color Scheme</a>
+            <a href="typography.html">Typography</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
     <main></main>
-    <footer></footer>
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Gilmar Gatto | Idaho |
+        <a href="http://www.byui.edu/online" target="_blank">BYU-Idaho</a> |
+        <a href="https://www.linkedin.com/in/gilmargatto/" target="_blank"
+          >LinkedIn</a
+        ><br />
+        <span id="updatedOn"></span>
+      </p>
+    </footer>
+    <script src="../scripts/currentData.js"></script>
   </body>
 </html>
