@@ -1,0 +1,17 @@
+.gridSections {
+    display: grid;
+    min-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+  }
+section > img {
+  width: 10%;
+}
+
+section > h1 {
+  color: black;
+}
+
+section > h2 {
+  color: black;
+}

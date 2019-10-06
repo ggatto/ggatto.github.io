@@ -53,7 +53,7 @@ footer {
   margin: 1.25rem auto 0;
   border-radius: 10px;
   padding: 0.5rem;
-  max-width: 800px; /* xxxpx (px = pixel is a unit of measure)  */
+  max-width: 80%; /* xxxpx (px = pixel is a unit of measure)  */
 }
 header,
 footer,
@@ -79,10 +79,10 @@ ul {
   margin: 0 0 auto;
   max-width: 300px;
 }
-ul a:link {
-  color: #24211c;
+/* ul a:link {
+  color: #24211c; */
 }
 
-ul a:visited {
+/* ul a:visited {
   color: var(--font-backgound-color);
-}
+} */

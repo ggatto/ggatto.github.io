@@ -8,7 +8,8 @@
       content="Portfolio of Gilmar Gatto - Brigham Young University - Idaho"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/nav-bar.css" />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
 
@@ -22,13 +23,25 @@
       <h2>BYU-Idaho</h2>
     </header>
     <nav>
-      <!-- future main menu -->
+      <ul>
+        <li>
+          <a href="../index.html"><strong>Home</strong></a>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Classes</a>
+          <div class="dropdown-content">
+            <a href="/cit230/index.html">CIT 230 | Web FrontEnd Design</a>
+            <a href="#"># | ########</a>
+            <a href="#"># | ########</a>
+          </div>
+        </li>
+      </ul>
     </nav>
     <main>
-      <h2>Portfolio</h2>
+      <!-- <h2>Portfolio</h2>
       <ul>
-        <li>CIT230: <a href="cit230/index.html">Assignment from CIT230</a></li>
-      </ul>
+        <li>CIT230: <a href="cit230/index.html">Web FrontEnd Design</a></li>
+      </ul> -->
     </main>
     <footer>
       <p>
@@ -36,7 +49,8 @@
         <a href="http://www.byui.edu/online" target="_blank">BYU-Idaho</a> |
         <a href="https://www.linkedin.com/in/gilmargatto/" target="_blank"
           >LinkedIn</a
-        >
+        ><br />
+        <span id="updatedOn"></span>
       </p>
     </footer>
     <script src="scripts/currentData.js"></script>
