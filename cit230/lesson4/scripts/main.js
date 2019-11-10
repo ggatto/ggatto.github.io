@@ -43,3 +43,8 @@ currentDateString =
 
 // Inject to DOM
 document.getElementById("currentDate").innerHTML = currentDateString;
+
+// ToggleMenu
+function toggleMenu() {
+  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
