@@ -32,7 +32,8 @@ header img{
   display: block;
   max-width: 500px;
   height: auto;
-  margin: .6em auto
+  margin: .6em auto;
+  padding: .8em;
 }
 /* Nav */
 nav {
