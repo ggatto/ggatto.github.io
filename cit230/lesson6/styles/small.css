@@ -25,9 +25,11 @@ h1, h2, h3, h4 {
   padding-bottom: .2em;
 }
 body {
-  background-image: url("/cit230/lesson4/images/image-backgroud.jpeg");
+  background-image: url("/cit230/lesson6/images/image-backgroud.jpeg");
   background-size: cover;
   background-position: center bottom;
+  background-attachment: fixed;
+  min-width: 300px;
 }
 
 .hidden {
@@ -118,7 +120,7 @@ header div img {
   position: absolute;
   top: 48%;
   left: 25%;
-  width: 200x;
+  width: 200px;
   transform: translate(-50%, -50%);
   color: var(--paragraph-color);
   border: black .25em dotted;
@@ -147,8 +149,7 @@ main div p {
   padding: 10px;
 }
 
-article img {  
-  max-width: 80%;
+article>img {  
   width: 80%
 }
 
@@ -162,7 +163,6 @@ article img {
   color: black;
 
 }
-
 /* Footer */
 footer {
   background-color: var(--backgound-color);
