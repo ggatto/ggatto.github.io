@@ -44,6 +44,11 @@ currentDateString =
 // Inject to DOM
 document.getElementById("currentDate").innerHTML = currentDateString;
 
+// ToggleMenu
+function toggleMenu() {
+  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
 // create five-day forecast
 let currentDay = weekDayNumber;
 
@@ -56,10 +61,11 @@ for (let i = 1; i < 6; i++) {
   }
   // assign
   const element = document.getElementById(`day${i}`);
-  element.innerHTML = weekDayName[currentDay];
+  // element.innerHTML = weekDayName[currentDay];
 }
 
 // show/hide pancake
-if (weekDayNumber === 5) {
-  document.getElementById("pancake").removeAttribute("class","hidden");
+if (currentDate.getDay() === 5) {
+  document.getElementById("pancake").removeAttribute("class", "hidden");
 }
+

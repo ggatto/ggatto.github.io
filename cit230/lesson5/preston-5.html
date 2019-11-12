@@ -1,3 +1,71 @@
-<p id="pancake">
-  Pancakes
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Preston, Idaho - Weather4Dummies</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/medium.css" />
+  <link rel="stylesheet" href="styles/large.css" />
+</head>
+
+<body>
+  <div id='pancake' class='hidden'>
+    <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+  <header>
+    <img src="images/logoWithname.svg" alt="Weather4Dummies Logo">
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu></a></li>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston, Idaho</h2>
+    <img src="#" alt="Hero Image">
+    <div>
+      <h4>Weather Summary</h4>
+    </div>
+    <div id="forecast">
+      <p>Day 1</p>
+      <p>Day 2</p>
+      <p>Day 3</p>
+      <p>Day 4</p>
+      <p>Day 5</p>
+    </div>
+    <section>
+      <h2>Articles</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>by Author</p>
+        <picture>
+          <img src="#" alt="Article Image">
+        </picture>
+      </article>
+    </section>
+    <section>
+      <h2>Contact Imformation</h2>
+      <p>Text of the contact</p>
+    </section>
+    <section>
+      <Map></Map>
+    </section>
+  </main>
+  <footer>
+    <span>&copy; Weather4Dummies | Gilmar Gatto</span><br>
+    <span id="currentDate"></span>
+  </footer>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
