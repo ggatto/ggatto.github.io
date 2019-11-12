@@ -1,8 +1,173 @@
-#weatherSummary {
-  background-color: pink;
-  max-width: 180px;
-  /* padding: 5px;
+/* @import url('https://fonts.googleapis.com/css?family=Anton|Fira+Sans&display=swap'); */
+:root {
+  /* Fonts */
+  --heading-font:  'Anton', sans-serif;
+  --footer-font: 'Fira Sans', Lato, Helvetica, sans-serif;
+  --paragraph-font: 'Fira Sans', Lato, Helvetica, sans-serif;
+
+  /* Colors */
+  --paragraph-color: #007980;
+  --heading-color: #E87C27;
+  --backgound-color: #31323A;
+  --accent-color: #39FFA4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  text-align: center;
+  padding-bottom: .2em;
+}
+body {
+  background-image: url("/cit230/lesson4/images/image-backgroud.jpeg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.hidden {
+  display: none;
+}
+
+#pancake {
+  background-color: var(--accent-color);
+  padding: 1px;
+  text-align: center;
+  border: none;
+  color: var(--paragraph-color);
+  font-size:1em;
+  font-weight: 700;
+}
+
+/* Header */
+header img{
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: .6em auto;
+  padding: 0 .9em;
+}
+
+/* Nav */
+nav {
+  margin: 0 auto;
+  /* max-width: 760px; */
+  background-color: #31323A;
+}
+
+header div img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--heading-color)
+}
+
+.navigation a:hover {
+  color: #31323A;
+  background-color: white;
+  font-weight: 700;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active {
+  background-color: var(--accent-color);
+  color: black;
+  font-weight: 700;
+}
+/* Main  */
+.hero-image {
+  width: 100%;
+}
+
+.hero-text {
+  margin: 0em;
+  padding: 1em;
+  text-align: left;
   position: absolute;
-  top: 20px;
-  bottom: 10px; */
+  top: 48%;
+  left: 25%;
+  width: 200x;
+  transform: translate(-50%, -50%);
+  color: var(--paragraph-color);
+  border: black .25em dotted;
+  background-color: rgba(247, 247, 247, 0.8);  
+}
+
+.hero-text>p {
+  margin: 0;
+  padding: .2em;
+  border: none;
+}
+
+#forecast{
+  display:none;
+}
+
+section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+main div p {
+  border: 1px black double;
+  margin: 5px;
+  padding: 10px;
+}
+
+article img {  
+  max-width: 80%;
+  width: 80%
+}
+
+#contact-info {
+  background-color: rgba(247, 247, 247, 0.8); ;
+}
+
+#contact-info a {
+  margin: 1em;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* Footer */
+footer {
+  background-color: var(--backgound-color);
+  text-align: center;
+  padding: .5em;
+  color: #ffffff;
+  text-shadow: -1px 0 #007980, 0 1px #007980, 1px 0 #007980, 0 -1px #007980;
 }
