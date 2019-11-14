@@ -1,0 +1,74 @@
+:root {
+  /* Fonts */
+  --heading-font:  'Anton', sans-serif;
+  --paragraph-font: 'Fira Sans', Lato, Helvetica, sans-serif;
+  --prophet-name-font: 'Parisienne', cursive;
+
+  /* Colors */
+  --paragraph-color: #ade9ec;
+  --heading-color: rgb(27, 15, 6);
+  --backgound-color: #31323A;
+  --accent-color: #39FFA4;
+}
+
+* {
+  font-family: var(--paragraph-font);
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-size: 5em;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--prophet-name-font);
+  padding: .2em 0;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+article {
+  margin: 2em;
+  padding: .8em;
+  border-radius: .5em;
+  text-align: center;
+  /* border: var(--accent-color) solid; */
+  color: var(--paragraph-color)
+}
+
+article, article h2, article div, article label, article span {
+  background-color: var(--backgound-color);
+}
+
+article div {
+  margin: .2em 0;
+}
+
+img {
+  width: 25em;
+  height: auto;
+  border-radius: 2em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 32.5em){
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
