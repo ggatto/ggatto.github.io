@@ -8,8 +8,9 @@
   /* Colors */
   --paragraph-color: #007980;
   --heading-color: #E87C27;
-  --backgound-color: #31323A;
+  --backgound-color: rgb(49, 50, 58);
   --accent-color: #39FFA4;
+  --backgound-rgb-color: 49, 50, 58;
 }
 
 * {
@@ -44,6 +45,73 @@ body {
   color: var(--paragraph-color);
   font-size:1em;
   font-weight: 700;
+}
+
+/* Storm Center Page */
+form {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(var(--backgound-rgb-color), 0.2);
+}
+
+label {
+  display: inline-block;
+  min-width: 120px;
+}
+
+form div {
+  margin-bottom: 5px;
+}
+
+form > p {
+  font-weight: 800;
+}
+
+#tksPage p {
+  margin: auto 2em;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: 800;
+}
+
+form > input, #goBackBtn {
+  display: inline;
+  margin: auto 20px;
+  padding: 20px;
+  color: var(--heading-color);
+  background-color: var(--backgound-color);
+}
+
+.form-heading {
+  margin-bottom: 0;
+  background-color: rgba(var(--backgound-rgb-color), 0.7);
+}
+
+.flex {
+  display: flex;
+}
+
+.nomargin {
+  margin: 3px;
+}
+
+#align-top {
+  vertical-align: top;
+}
+
+.flexly {
+  display: flex;
+  align-items: center;
+}
+
+#ratingvalue {
+  margin: 0 15px;
+}
+
+#rating {
+  margin-left: 60px;
 }
 
 /* Header */

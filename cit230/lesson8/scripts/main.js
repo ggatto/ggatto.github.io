@@ -2,8 +2,8 @@
 WebFont.load({
   google: {
     families: [
-       'Anton',
-       'Fira Sans'
+      'Anton',
+      'Fira Sans'
     ]
   }
 });
@@ -82,5 +82,10 @@ if (currentDate.getDay() === 5) {
 // Display Range
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+// Go back page button
+function goBack() {
+  window.history.back();
 }
 
