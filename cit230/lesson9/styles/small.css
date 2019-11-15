@@ -1,0 +1,269 @@
+/* @import url('https://fonts.googleapis.com/css?family=Anton|Fira+Sans&display=swap'); */
+:root {
+  /* Fonts */
+  --heading-font:  'Anton', sans-serif;
+  --footer-font: 'Fira Sans', Lato, Helvetica, sans-serif;
+  --paragraph-font: 'Fira Sans', Lato, Helvetica, sans-serif;
+
+  /* Colors */
+  --paragraph-color: #007980;
+  --heading-color: #E87C27;
+  --backgound-color: rgb(49, 50, 58);
+  --accent-color: #39FFA4;
+  --backgound-rgb-color: 49, 50, 58;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  text-align: center;
+  padding-bottom: .2em;
+}
+body {
+  background-image: url("/cit230/lesson6/images/image-backgroud.jpeg");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;
+  min-width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+#pancake {
+  background-color: var(--accent-color);
+  padding: 1px;
+  text-align: center;
+  border: none;
+  color: var(--paragraph-color);
+  font-size:1em;
+  font-weight: 700;
+}
+
+/* Storm Center Page */
+form {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(var(--backgound-rgb-color), 0.2);
+}
+
+label {
+  display: inline-block;
+  min-width: 120px;
+}
+
+form div {
+  margin-bottom: 5px;
+}
+
+form > p {
+  font-weight: 800;
+}
+
+#tksPage p {
+  margin: auto 2em;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: 800;
+}
+
+form > input, #goBackBtn {
+  display: inline;
+  margin: auto 20px;
+  padding: 20px;
+  color: var(--heading-color);
+  background-color: var(--backgound-color);
+}
+
+.form-heading {
+  margin-bottom: 0;
+  background-color: rgba(var(--backgound-rgb-color), 0.7);
+}
+
+.flex {
+  display: flex;
+}
+
+.nomargin {
+  margin: 3px;
+}
+
+#align-top {
+  vertical-align: top;
+}
+
+.flexly {
+  display: flex;
+  align-items: center;
+}
+
+#ratingvalue {
+  margin: 0 15px;
+}
+
+#rating {
+  margin-left: 60px;
+}
+
+/* Header */
+header img{
+  display: block;
+  max-width: 500px;
+  height: auto;
+  margin: .6em auto;
+  padding: 0 .9em;
+}
+
+/* Nav */
+nav {
+  margin: 0 auto;
+  /* max-width: 760px; */
+  background-color: #31323A;
+}
+
+header div img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+
+}
+
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--heading-color)
+}
+
+.navigation a:hover {
+  color: #31323A;
+  background-color: white;
+  font-weight: 700;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active {
+  background-color: var(--accent-color);
+  color: black;
+  font-weight: 700;
+}
+/* Main  */
+.hero-image {
+  width: 100%;
+}
+
+.hero-text {
+  margin: 0em;
+  padding: .2em;
+  text-align: left;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  color: var(--paragraph-color);
+  border: black .25em dotted;
+  background-color: rgba(247, 247, 247, 0.8);  
+}
+
+.hero-text>p {
+  margin: 0;
+  padding: .2em;
+  border: none;
+}
+
+#forecast{
+  display:none;
+}
+
+section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+main div p {
+  border: 1px black double;
+  margin: 5px;
+  padding: 10px;
+}
+
+article>img {  
+  width: 80%
+}
+
+#contact-info {
+  background-color: rgba(247, 247, 247, 0.8); ;
+}
+
+#contact-info a {
+  margin: 1em;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* Main Gallery Page */
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+section figure {
+  max-width: none;
+  margin: 0px;
+  padding: 0px;  
+}
+
+section figure img {
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+#gallery figcaption {
+  Display: none;
+}
+
+section figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+/* Footer */
+footer {
+  background-color: var(--backgound-color);
+  text-align: center;
+  padding: .5em;
+  color: #ffffff;
+  text-shadow: -1px 0 #007980, 0 1px #007980, 1px 0 #007980, 0 -1px #007980;
+}

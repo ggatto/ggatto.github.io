@@ -1,0 +1,31 @@
+body {
+  background-color: blueviolet;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  color: darkgrey;
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+#gallery {
+  text-align: center;
+}
