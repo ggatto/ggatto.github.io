@@ -183,12 +183,13 @@ header div img {
 }
 
 .hero-text {
+  display: inline-block;
   margin: 0em;
   padding: .2em;
   text-align: left;
-  position: absolute;
-  top: 45%;
-  left: 25%;
+  position: relative;
+  top: -72px;
+  left: 110px;
   width: 200px;
   transform: translate(-50%, -50%);
   color: var(--paragraph-color);
@@ -256,6 +257,10 @@ article>img {
 .homeGrid img {
   vertical-align: bottom;
   max-width: 100%;
+}
+
+.homeGrid h2 {
+  font-size: 2em;
 }
 
 .homeGrid h3 {

@@ -13,6 +13,11 @@
       flex: 1 1 100%;
   }
 
+  .hero-text {
+    top: -220px;
+    left: 130px;
+  }
+
   .header-img {
       margin-left: auto;
       margin-right: auto;
