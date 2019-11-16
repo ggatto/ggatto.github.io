@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home - Weather4Dummies</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+
+  <body>
+    <div id="pancake" class="hidden">
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </p>
+    </div>
+    <header>
+      <img src="images/logoWithname.svg" alt="Weather4Dummies Logo" />
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu></a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="preston-9.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="homeGrid">
+        <figure>
+          <h2>Preston</h2>
+          <h3 id="prestonMotto"></h3>
+          <p>
+            Year Founded:
+            <span id="prestonYear"></span>
+          </p>
+          <p>
+            Population:
+            <span id="prestonPopulation"></span>
+          </p>
+          <p>
+            Annual Rain Fall:
+            <span id="prestonAR"></span>
+          </p>
+          <img src="preston-9.html" alt="Preston" id="prestonImage" />
+        </figure>
+        <figure>
+          <h2>Soda Springs</h2>
+          <h3 id="sodaSpringsMotto"></h3>
+          <p>
+            Year Founded:
+            <span id="sodaSpringsYear"></span>
+          </p>
+          <p>
+            Population:
+            <span id="sodaSpringsPopulation"></span>
+          </p>
+          <p>
+            Annual Rain Fall:
+            <span id="sodaSpringsAR"></span>
+          </p>
+          <img src="" alt="Soda Springs" id="sodaSpringsImage" />
+        </figure>
+        <figure>
+          <figcaption>
+            <h2>Fish Haven</h2>
+            <h3 id="fishHavenMotto"></h3>
+            <p>
+              Year Founded:
+              <span id="fishHavenYear"></span>
+            </p>
+            <p>
+              Population:
+              <span id="fishHavenPopulation"></span>
+            </p>
+            <p>
+              Annual Rain Fall:
+              <span id="fishHavenAR"></span>
+            </p>
+          </figcaption>
+          <img src="" alt="Fish Haven" id="fishHavenImage" />
+        </figure>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; Weather4Dummies | Gilmar Gatto</span><br />
+      <span id="currentDate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- <script src="scripts/lazyload.js"></script> -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/towndata.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+  </body>
+</html>

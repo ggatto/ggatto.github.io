@@ -75,7 +75,7 @@ for (let i = 1; i < 6; i++) {
 }
 
 // show/hide pancake
-if (currentDate.getDay() === 5) {
+if (currentDate.getDay() === 5 ){
   document.getElementById("pancake").removeAttribute("class", "hidden");
 }
 

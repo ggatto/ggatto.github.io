@@ -23,6 +23,10 @@
   .navigation {
       text-transform: capitalize;
   }
+
+  .homeGrid {
+    grid-template-columns: 1fr 1fr;
+  }
   
   #forecast{
     display:block;

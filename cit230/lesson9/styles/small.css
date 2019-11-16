@@ -150,6 +150,7 @@ header div img {
 
 .navigation li {
   display: none;
+  /* align-self: center; */
 
 }
 
@@ -161,7 +162,7 @@ header div img {
   color: var(--heading-color)
 }
 
-.navigation a:hover {
+.navigation li:hover {
   color: #31323A;
   background-color: white;
   font-weight: 700;
@@ -230,6 +231,37 @@ article>img {
   text-decoration: none;
   color: black;
 
+}
+
+/* Main Home Page */
+.homeGrid {
+  display: grid;
+  gap: .5em;
+  text-align: center;
+  background-color: rgba(var(--backgound-rgb-color), 0.8);
+}
+
+.homeGrid figure {
+  padding: .5em 0 0 0;
+  border: var(--paragraph-color) .5em double;
+  background-color: rgba(var(--backgound-rgb-color), 0.7);
+}
+
+.homeGrid p {
+  margin: 0 0;
+  line-height: 1.5em;
+  /* text-align: left; */
+}
+
+.homeGrid img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.homeGrid h3 {
+  color: black;
+  font-size: .8em; 
+  font-family: var(--paragraph-font);
 }
 
 /* Main Gallery Page */
