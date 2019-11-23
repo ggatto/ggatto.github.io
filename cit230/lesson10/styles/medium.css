@@ -1,0 +1,61 @@
+/* Media Query for medium screens */
+@media only screen and (min-width: 32.5em) {
+  .navigation {
+      display: flex;
+  }
+
+  .navigation li:first-child {
+      display: none;
+  }
+
+  .navigation li {
+      display: block;
+      flex: 1 1 100%;
+  }
+  .hero {
+    max-height: 400px;
+  }
+  .hero-text {
+    top: -220px;
+    left: 130px;
+  }
+
+  .header-img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+      height: auto;
+  }
+
+  .navigation {
+      text-transform: capitalize;
+  }
+
+  .homeGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #forecast{
+    display: block;
+    max-width: 100%;
+    
+    
+  }
+
+  #forecast table, #forescast tr, #forecast th, #forecast td {
+    text-align: center;
+    vertical-align: baseline;
+    padding: 1.8em;
+    border: .2em solid;
+    background-color: rgb(128, 128, 128, 0.6);
+  }
+
+  #forecast th {
+    width: 10px;
+  }
+
+  /* Gallery Page */
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

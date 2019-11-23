@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Preston, Idaho - Weather4Dummies</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+  </head>
+
+  <body>
+    <div id="pancake" class="hidden">
+      <p>
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+        park pavilion.
+      </p>
+    </div>
+    <header>
+      <img src="images/logoWithname.svg" alt="Weather4Dummies Logo" />
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-10.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <input type="hidden" id="cityID" value="5604473" />
+      <h2>Preston, Idaho</h2>
+      <section class="hero">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            class="hero-image"
+            srcset="images/hero-image-1024-large.png"
+          />
+          <source
+            media="(min-width: 520px)"
+            class="hero-image"
+            srcset="images/hero-image-800-medium.png"
+          />
+          <img
+            src="images/hero-image-500-small.png"
+            class="hero-image"
+            alt="Hero Image"
+          />
+        </picture>
+        <div class="hero-text">
+          <h2>Weather Summary</h2>
+          <p>Currenty: <span id="currentTemp"></span> | <span id="currenty"></span></p>
+          <p>High: <span id="highTemp"></span></p>
+          <p>Wind Chill: <span id="windChill"></span></p>
+          <p>Humility: <span id="humility"></span></p>
+          <p>Wind Speed: <span id="windSpeed"></span></p>
+        </div>
+      </section>
+      <section>
+        <h2>Forecast Next Five Days</h2>
+        <table id="forecast">
+          <tr>
+            <th>Day</th>
+            <th id="day1">Day 1</th>
+            <th id="day2">Day 2</th>
+            <th id="day3">Day 3</th>
+            <th id="day4">Day 4</th>
+            <th id="day5">Day 5</th>
+          </tr>
+          <tr>
+            <th>Forecast</th>
+            <td><img id="forecast-icon1" /><span id="temp1"></span></td>
+            <td><img id="forecast-icon2" /><span id="temp2"></span></td>
+            <td><img id="forecast-icon3" /><span id="temp3"></span></td>
+            <td><img id="forecast-icon4" /><span id="temp4"></span></td>
+            <td><img id="forecast-icon5" /><span id="temp5"></span></td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>Articles</h2>
+        <article>
+          <h3>Weather forecasting</h3>
+          <p>
+            Weather forecasting is the application of science and technology to
+            predict the conditions of the atmosphere for a given location and
+            time. People have attempted to predict the weather informally for
+            millennia and formally since the 19th century. Weather forecasts are
+            made by collecting quantitative data about the current state of the
+            atmosphere at a given place and using meteorology to project how the
+            atmosphere will change. Once calculated by hand based mainly upon
+            changes in barometric pressure, current weather conditions, and sky
+            condition or cloud cover, weather forecasting now relies on
+            computer-based models that take many atmospheric factors into
+            account.[1] Human input is still required to pick the best possible
+            forecast model to base the forecast upon, which involves pattern
+            recognition skills, teleconnections, knowledge of model performance,
+            and knowledge of model biases. The inaccuracy of forecasting is due
+            to the chaotic nature of the atmosphere, the massive computational
+            power required to solve the equations that describe the atmosphere,
+            the error involved in measuring the initial conditions, and an
+            incomplete understanding of atmospheric processes. Hence, forecasts
+            become less accurate as the difference between current time and the
+            time for which the forecast is being made (the range of the
+            forecast) increases. The use of ensembles and model consensus help
+            narrow the error and pick the most likely outcome. There are a
+            variety of end uses to weather forecasts. Weather warnings are
+            important forecasts because they are used to protect life and
+            property. Forecasts based on temperature and precipitation are
+            important to agriculture, and therefore to traders within commodity
+            markets. Temperature forecasts are used by utility companies to
+            estimate demand over coming days. On an everyday basis, people use
+            weather forecasts to determine what to wear on a given day. Since
+            outdoor activities are severely curtailed by heavy rain, snow and
+            wind chill, forecasts can be used to plan activities around these
+            events, and to plan ahead and survive them. In 2009, the US spent
+            $5.1 billion on weather forecasting.
+          </p>
+          <br />
+          <img
+            src="https://en.wikipedia.org/wiki/Weather_forecasting#/media/File:Day5pressureforecast.png"
+            alt="Article Image"
+          />
+        </article>
+      </section>
+      <section id="contact-info">
+        <h2>Contact Information</h2>
+        <p>
+          <b>Address: </b>538 S 2nd W APT 2301, Rexburg, ID 83440<br />
+          <b>Email: </b
+          ><a href="mailto:info@weather4dummies.com">info@weather4dummies.com</a
+          ><br />
+          <b>Phone: </b><a href="tel:+18006563866">+1 (800) 656-3866</a>
+        </p>
+        <br />
+        <iframe
+          name="googleMaps"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnygAZAYLVFMRRb_CQeCoGF4&key=AIzaSyB0JVqO6eGcLeZAkTUm2AcfnPXm4Kwm5ZU"
+          style="width:100%; height:300px; border:0;"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; Weather4Dummies | Gilmar Gatto</span><br />
+      <span id="currentDate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/five-day-forecast.js"></script>
+  </body>
+</html>
