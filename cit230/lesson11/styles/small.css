@@ -305,6 +305,23 @@ section figure img[data-src] {
   filter: blur(0.2em);
 }
 
+/* Main Events */
+#eventsPreston p:first-child, #eventsSodaSprings p:first-child, #eventsFishHaven p:first-child {
+text-align: center;
+background-color: var(--accent-color);
+border: 10px solid var(--backgound-color);
+font-size: 19pt;
+color: var(--paragraph-color)
+}
+
+#eventsPreston p, #eventsSodaSprings p, #eventsFishHaven p {
+  text-align: center;
+  background-color: rgba(var(--backgound-rgb-color), 0.8);
+  border: 5px solid var(--backgound-color);
+  font-size: 15pt;
+  color: white;
+  }
+
 /* Footer */
 footer {
   background-color: var(--backgound-color);

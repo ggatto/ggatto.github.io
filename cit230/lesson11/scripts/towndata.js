@@ -1,4 +1,4 @@
-const resquestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+let resquestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(resquestURL).then(response => {
   response.json().then(response => {
