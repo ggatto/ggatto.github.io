@@ -22,6 +22,7 @@ fetch(apiForecastURL)
   .then(forecasts => {
     let nextDate = new Date();
     nextDate.setDate(nextDate.getDate() + 1);
+    let dateString = getDateString(nextDate);
     let hourString = "18:00:00";
     let counter = 1;
 
@@ -31,16 +32,16 @@ fetch(apiForecastURL)
         // forecast.dt_txt.includes(dateString) &&
         forecast.dt_txt.includes(hourString)
       ) {
-        // Insert Temp
+        // insert temp
         const element = document.getElementById(`temp${counter}`);
         element.innerHTML = Math.ceil(forecast.main.temp_max) + "&deg;F";
 
-        // Insert Day
+        // insert Day
         let nextDate = new Date(forecast.dt_txt);
         const dayElement = document.getElementById(`day${counter}`);
         dayElement.innerHTML = weekDayNames[nextDate.getDay()];
 
-        // Insert the icon
+        // insert the icon
         const currentImage =
           "https://openweathermap.org/img/w/" +
           forecast.weather[0].icon +
@@ -55,7 +56,12 @@ fetch(apiForecastURL)
         // increment Variables
         counter += 1;
         nextDate.setDate(nextDate.getDate() + 1);
+        dateString = getDateString(nextDate);
       }
     });
   });
-
+function getDateString(date) {
+  let dateString =
+    date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+  return dateString;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Preston, Idaho - Weather4Dummies</title>
+    <title>Soda Springs, Idaho - Weather4Dummies</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -13,12 +13,6 @@
   </head>
 
   <body>
-    <div id="pancake" class="hidden">
-      <p>
-        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-        park pavilion.
-      </p>
-    </div>
     <header>
       <img src="images/logoWithname.svg" alt="Weather4Dummies Logo" />
     </header>
@@ -26,16 +20,16 @@
       <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu></a></li>
         <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="#">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li class="active"><a href="#">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery-10.html">Gallery</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <input type="hidden" id="cityID" value="5604473" />
-      <h2>Preston, Idaho</h2>
+      <input type="hidden" id="cityID" value="5607916" />
+      <h2>Soda Springs, Idaho</h2>
       <section class="hero">
         <picture>
           <source
@@ -56,7 +50,10 @@
         </picture>
         <div class="hero-text">
           <h2>Weather Summary</h2>
-          <p>Currenty: <span id="currentTemp"></span> | <span id="currenty"></span></p>
+          <p>
+            Currenty: <span id="currentTemp"></span> |
+            <span id="currenty"></span>
+          </p>
           <p>High: <span id="highTemp"></span></p>
           <p>Wind Chill: <span id="windChill"></span></p>
           <p>Humility: <span id="humility"></span></p>
