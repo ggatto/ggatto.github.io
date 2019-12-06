@@ -26,6 +26,7 @@ h4 {
   color: var(--heading-color);
   text-align: center;
   padding-bottom: 0.2em;
+  padding-top: 8pt;
 }
 body {
   background-image: url("/cit230/lesson10/images/image-backgroud.jpeg");

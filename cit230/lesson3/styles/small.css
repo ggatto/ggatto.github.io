@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Fira+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Anton|Fira+Sans&display=swap");
 /* color-scheme.html */
-article>h2 {
+article > h2 {
   border-bottom: none;
 }
 #site-plan-scheme h1 {
   color: black;
 }
 
-#site-plan-scheme .hColor{
-  background-color: #E87C27;
+#site-plan-scheme .hColor {
+  background-color: #e87c27;
   color: white;
 }
 
-#site-plan-scheme .pColor{
+#site-plan-scheme .pColor {
   background-color: #007980;
   color: white;
 }
 
-#site-plan-scheme .aColor{
-  background-color: #39FFA4;
+#site-plan-scheme .aColor {
+  background-color: #39ffa4;
   color: white;
 }
 
@@ -33,14 +33,14 @@ article>h2 {
 /* index.html */
 #site-plan-index h1 {
   color: black;
-
 }
 
 /* target-audience.html */
 #site-plan-target {
   display: flex;
 }
-#site-plan-target li, ul {
+#site-plan-target li,
+ul {
   list-style: square;
   max-width: 100%;
 }
@@ -50,24 +50,27 @@ article>h2 {
 }
 
 /* typograpgy.html */
-#site-plan-typograpy h1,h2,h3,p {
-  margin:0;
+#site-plan-typograpy h1,
+h2,
+h3,
+p {
+  margin: 0;
   padding: 1.5%;
 }
 #site-plan-typograpy h1 {
-  color: #E87C27;
-  font-family: 'Anton', sans-serif;
+  color: #e87c27;
+  font-family: "Anton", sans-serif;
 }
 #site-plan-typograpy h2 {
-  color: #E87C27;
+  color: #e87c27;
   border-bottom: none;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
 #site-plan-typograpy h3 {
-  color: #E87C27;
-  font-family: 'Anton', sans-serif;
+  color: #e87c27;
+  font-family: "Anton", sans-serif;
 }
 #site-plan-typograpy p {
   color: #007980;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
