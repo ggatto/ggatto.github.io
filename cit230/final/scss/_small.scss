@@ -1,0 +1,44 @@
+* {
+  font-family: $fontFamily;
+  margin: $gutter;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: $background-color;
+}
+
+.responsive li {
+  display: block;
+}
+
+.active {
+  background-color: $activeColor;
+  color: black;
+  font-weight: 700;
+}
+
+.navigation {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  li:first-child {
+    display: block;
+  }
+  li {
+    display: none;
+  }
+  a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--heading-color);
+  }
+  li:hover {
+    color: $activeColor;
+    background-color: white;
+    font-weight: 700;
+  }
+}

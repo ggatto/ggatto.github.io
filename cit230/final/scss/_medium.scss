@@ -1,0 +1,11 @@
+.navigation {
+  display: flex;
+  text-transform: capitalize;
+  li:first-child {
+    display: none;
+  }
+  li {
+    display: block;
+    flex: 1 1 100%;
+  }
+}
