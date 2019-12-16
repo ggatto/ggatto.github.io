@@ -12,7 +12,7 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
-        document.querySelector(`#cityID-${templeNumeber}`).innerHTML =
+        document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
           temples.Address.Street +
@@ -74,7 +74,7 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
-          document.querySelector(`#cityID-${templeNumeber}`).innerHTML =
+        document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
           temples.Address.Street +
@@ -136,7 +136,7 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
-        document.querySelector(`#cityID-${templeNumeber}`).innerHTML =
+        document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
           temples.Address.Street +
@@ -198,7 +198,7 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
-        document.querySelector(`#cityID-${templeNumeber}`).innerHTML =
+        document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
           temples.Address.Street +
