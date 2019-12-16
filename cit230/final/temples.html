@@ -1,0 +1,204 @@
+<!-- The temple page describes the details for at least four temples of your choice
+providing information about the address, telephone, email, services, history,
+ordinance schedule, session schedule, temple closure schedule (from a JSON
+source), and summary—current weather information obtained from a third party
+API. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a hotel chain that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world."
+    />
+    <meta name="author" content="Gilmar Gatto" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Temples - The Temple Inn & Suites</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/Temple Inn Logo.png" alt="Temple Inn Logo" />
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="temples.html">Temples</a></li>
+        <li><a href="reservation.html">Revervation</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="templesPage">
+      <!-- TEMPLE 1 -->
+      <section id="temple1">
+        <h2 id="name1"></h2>
+        <figure>
+          <img id="image1" src="#" />
+        </figure>
+        <article>
+          <h2>Information</h2>
+          <p>Address: <span id="street1"></span></p>
+          <p>Telephone: <span id="phone1"></span></p>
+          <ul id="services1">
+            Services:
+          </ul>
+          <p>E-mail: <span id="email1"></span></p>
+          <ul id="history1">
+            History:
+          </ul>
+          <ul id="session1">
+            Session:
+          </ul>
+          <ul id="closure1">
+            Closure:
+          </ul>
+        </article>
+        <article class="weather-summary">
+          <input type="hidden" id="cityID-1" value="" />
+          <h2>Weather Summary</h2>
+          <p>
+            Currenty: <span id="currentTemp-1"></span> |
+            <span id="currenty-1"></span>
+          </p>
+          <p>High: <span id="highTemp-1"></span></p>
+          <p>Min: <span id="minTemp-1"></span></p>
+        </article>
+      </section>
+      <hr>
+      <!-- TEMPLE 2  -->
+      <section id="temple2">
+        <h2 id="name2"></h2>
+        <figure>
+          <img id="image2" src="#" />
+        </figure>
+        <article>
+          <h2>Information</h2>
+          <p>Address: <span id="street2"></span></p>
+          <p>Telephone: <span id="phone2"></span></p>
+          <ul id="services2">
+            Services:
+          </ul>
+          <p>E-mail: <span id="email2"></span></p>
+          <ul id="history2">
+            History:
+          </ul>
+          <ul id="session2">
+            Session:
+          </ul>
+          <ul id="closure2">
+            Closure:
+          </ul>
+        </article>
+        <article class="weather-summary">
+          <input type="hidden" id="cityID-2" value="3663517" />
+          <h2>Weather Summary</h2>
+          <p>
+            Currenty: <span id="currentTemp-2"></span> |
+            <span id="currenty-2"></span>
+          </p>
+          <p>High: <span id="highTemp-2"></span></p>
+          <p>Min: <span id="minTemp-2"></span></p>
+        </article>
+      </section>
+      <hr />
+      <!-- TEMPLE 3 -->
+      <section id="temple3">
+        <h2 id="name3"></h2>
+        <figure>
+          <img id="image3" src="#" />
+        </figure>
+        <article>
+          <h2>Information</h2>
+          <p>Address: <span id="street3"></span></p>
+          <p>Telephone: <span id="phone3"></span></p>
+          <ul id="services3">
+            Services:
+          </ul>
+          <p>E-mail: <span id="email3"></span></p>
+          <ul id="history3">
+            History:
+          </ul>
+          <ul id="session3">
+            Session:
+          </ul>
+          <ul id="closure3">
+            Closure:
+          </ul>
+        </article>
+        <article class="weather-summary">
+          <input type="hidden" id="cityID-3" value="3467865" />
+          <h2>Weather Summary</h2>
+          <p>
+            Currenty: <span id="currentTemp-3"></span> |
+            <span id="currenty-3"></span>
+          </p>
+          <p>High: <span id="highTemp-3"></span></p>
+          <p>Min: <span id="minTemp-3"></span></p>
+        </article>
+      </section>
+      <hr />
+      <!-- TEMPLE 4 -->
+      <section id="temple4">
+        <h2 id="name4"></h2>
+        <figure>
+          <img id="image4" src="#" />
+        </figure>
+        <article>
+          <h2>Information</h2>
+          <p>Address: <span id="street4"></span></p>
+          <p>Telephone: <span id="phone4"></span></p>
+          <ul id="services4">
+            Services:
+          </ul>
+          <p>E-mail: <span id="email4"></span></p>
+          <ul id="history4">
+            History:
+          </ul>
+          <ul id="session4">
+            Session:
+          </ul>
+          <ul id="closure4">
+            Closure:
+          </ul>
+        </article>
+        <article class="weather-summary">
+          <input type="hidden" id="cityID-4" value="3452925" />
+          <h2>Weather Summary</h2>
+          <p>
+            Currenty: <span id="currentTemp-4"></span> |
+            <span id="currenty-4"></span>
+          </p>
+          <p>High: <span id="highTemp-4"></span></p>
+          <p>Min: <span id="minTemp-4"></span></p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>The Temple Inn & Suites<br /><span id="CurrentDate"></span></p>
+      </div>
+      <div>
+        <p>4800 Montgomery Ln #300, Bethesda, MD 20814<br />(800) 563-5852</p>
+      </div>
+      <div id="social">
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="images/social-facebook-box-blue.ico" alt="Facebook Icon"
+        /></a>
+      </div>
+      <div id="social">
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="images/cold-Fusion-Hd-Instagram.ico" alt="Instagram Icon"
+        /></a>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/temple.js"></script>
+    <script src="scripts/weather-summary.js"></script>
+  </body>
+</html>

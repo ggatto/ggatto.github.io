@@ -1,6 +1,28 @@
+body {
+  max-width: 920px;
+}
+
+img {
+  min-width: 100%;
+  
+}
+
+footer {
+  justify-content: space-between;
+  p{
+    font-size: 13pt;
+  }
+  img {
+    max-height: 50px;
+  }
+  span {
+    font-size: 12pt;
+  }
+}
+
 .navigation {
   display: flex;
-  text-transform: capitalize;
+  text-transform: uppercase;
   li:first-child {
     display: none;
   }

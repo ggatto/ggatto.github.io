@@ -1,9 +1,14 @@
 $fontFamily: 'Quicksand', sans-serif;
+$fontFamily-heading: 'Josefin Sans', sans-serif;
+
 $regularWeigh: 300;
 $heiveWeigh: 700;
-$background-color: rgb(49, 50, 58);
-$activeColor: rgb(226, 37, 37);
 
+$background-color: rgb(49, 50, 58);
+$background-color-hover: gray;
+
+$activeColor: rgb(226, 37, 37);
+$paragraphColor: white;
 $headingColor: rgb(26, 235, 60);
 
 $gutter: 1% 2%;

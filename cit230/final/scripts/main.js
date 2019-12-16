@@ -18,3 +18,31 @@ WebFont.load({
 function toggleMenu() {
   document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
+var currentDate = new Date();
+//get months
+var monthNumber = currentDate.getMonth();
+var monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+var monthName = monthNames[monthNumber];
+//Display date String
+currentDateString =
+  currentDate.getDate() +
+  " " +
+  monthName +
+  " " +
+  currentDate.getFullYear();
+// Inject to DOM
+document.getElementById("CurrentDate").innerHTML = currentDateString;
