@@ -217,7 +217,7 @@ footer span { font-size: 7.5pt; }
 
 .services li { list-style-type: square; text-align: justify; }
 
-.services h2, .services h3 { font-size: 1.5; }
+.services h2, .services h3 { font-size: 1.5em; }
 
 #thk-msg { background-color: #8c623e; color: #d9ae79; }
 
