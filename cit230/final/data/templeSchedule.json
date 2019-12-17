@@ -78,11 +78,11 @@
         "Distribution center nearby"
       ],
       "email": "brazil.manaus@lds.org",
-      "history": {
-        "announced": "23 May 2007",
-        "groundbreaking": "20 June 2008",
-        "dedicated": "10 June 2012"
-      },
+      "history": [
+        "Announced: 23 May 2007",
+        "Groundbreaking: 20 June 2008",
+        "Dedicated: 10 June 2012"
+      ],
       "ordinance": "",
       "session": [
         "7:15",
@@ -131,11 +131,11 @@
         "Distribution center nearby"
       ],
       "email": "brazil.campinas@lds.org",
-      "history": {
-        "announced": "3 April 1997",
-        "groundbreaking": "1 May 1998",
-        "dedicated": "17 May 2002"
-      },
+      "history": [
+        "Announced: 3 April 1997",
+        "Groundbreaking: 1 May 1998",
+        "Dedicated: 17 May 2002"
+      ],
       "ordinance": "",
       "session": [
         "9:00",
@@ -188,11 +188,11 @@
         "Distribution center nearby"
       ],
       "email": "brazil.poa@lds.org",
-      "history": {
-        "announced": "30 September 1997",
-        "groundbreaking": "2 May 1998",
-        "dedicated": "17 December 2000"
-      },
+      "history": [
+        "Announced: 30 September 1997",
+        "Groundbreaking: 2 May 1998",
+        "Dedicated: 17 December 2000"
+      ],
       "session": ["15:00", "16:30", "18:30", "20:00"],
       "closure": [
         "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",

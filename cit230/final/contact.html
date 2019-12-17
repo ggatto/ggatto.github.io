@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <title>Home - The Temple Inn & Suites</title>
+    <title>Contact - The Temple Inn & Suites</title>
   </head>
   <body>
     <header>
@@ -24,10 +24,66 @@
         <li><a href="temples.html">Temples</a></li>
         <li><a href="reservation.html">Revervation</a></li>
         <li><a href="services.html">Services</a></li>
-        <li class="active"><a href="contact.html">Contact</a></li class="active">
+        <li class="active"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main></main>
+    <main>
+      <h1>Contact US</h1>
+      <div class="container">
+        <form action="form-cont-thanks.html" method="GET">
+          <ul class="flex-outer">
+            <h3>* Required</h3>
+            <li>
+              <label for="first-name">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter your first name here"
+                required
+              />
+            </li>
+            <li>
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter your last name here"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email here"
+                required
+              />
+            </li>
+
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                rows="6"
+                id="message"
+                placeholder="Enter your message here"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit">Submit</button>
+              <button type="reset">Clear</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <h2>Company's Headquarter Address</h2>
+      <iframe
+        name="googleMaps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013244!2d-77.09772048520813!3d38.98325177955752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800%20Montgomery%20Ln%20%23300%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1576546152564!5m2!1sen!2sus"
+        style="width:100%; height:300px; border:0; margin: 2% auto;"
+        allowfullscreen
+      ></iframe>
+    </main>
     <footer>
       <div>
         <p>The Temple Inn & Suites<br /><span id="CurrentDate"></span></p>
@@ -36,12 +92,12 @@
         <p>4800 Montgomery Ln #300, Bethesda, MD 20814<br />(800) 563-5852</p>
       </div>
       <div id="social">
-        <a href="https://www.facebook.com" target="_blank"
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
           ><img src="images/social-facebook-box-blue.ico" alt="Facebook Icon"
         /></a>
       </div>
       <div id="social">
-        <a href="https://www.instagram.com" target="_blank"
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"
           ><img src="images/cold-Fusion-Hd-Instagram.ico" alt="Instagram Icon"
         /></a>
       </div>

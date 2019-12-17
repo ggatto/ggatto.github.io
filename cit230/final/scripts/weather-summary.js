@@ -83,4 +83,4 @@ setTimeout(function() {
         Math.ceil(minTemp) + "&degF";
       document.getElementById("currenty-4").innerHTML = currenly;
     });
-}, 2000);
+}, 500);

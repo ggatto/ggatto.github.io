@@ -1,5 +1,3 @@
-const requestURL = "data/templeSchedule.json";
-
 fetch(requestURL).then(response => {
   response.json().then(response => {
     const temples = response.temples;

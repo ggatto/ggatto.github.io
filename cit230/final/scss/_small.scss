@@ -14,6 +14,8 @@ h1,
 h2,
 h3 {
   font-family: $fontFamily-heading;
+  background-color: $headingColorBackground;
+  color: $headingColor;
 }
 
 h1 {
@@ -59,7 +61,6 @@ ul {
 
 img {
   max-width: 100%;
-  
 }
 
 hr {
@@ -117,8 +118,8 @@ footer {
   li {
     display: none;
   }
-  li:hover {
-    background-color: gray;
+  li a:hover {
+    background-color: gray !important;
     font-weight: 700;
   }
   li:first-child {
@@ -137,4 +138,90 @@ footer {
   background-color: $activeColor;
   // color: black;
   font-weight: 700;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  * {
+    box-sizing: border-box;
+  }
+  h3 {
+    background-color: rgba($background-color, 0.0);
+    color: red;
+    font-size: 15pt;
+    font-weight: $heiveWeigh;
+    text-align: left;
+
+  }
+}
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+  }
+  > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  li label,
+  li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+    text-transform: capitalize;
+  }
+  > li > label,
+  li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  > li > label + * {
+    flex: 1 0 220px;
+  }
+  li p {
+    margin: 0;
+  }
+  li input,
+  li textarea {
+    padding: 15px;
+    border: none;
+  }
+  li button {
+    margin-left:  auto;
+    margin-bottom: 3%;
+    padding: 8px 16px;
+    border: none;
+    background: rgba($background-color, 0.8);
+    color: $paragraphColor;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-radius: 2px;
+  }
+}
+
+.services {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.4em;
+  li {
+    list-style-type: square;
+    text-align: justify;
+  }
+  h2, h3 {
+    font-size: 1.5;
+  }
+  
+}
+
+#thk-msg {
+    background-color: $headingColor;
+    color: $headingColorBackground;
 }

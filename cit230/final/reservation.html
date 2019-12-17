@@ -3,11 +3,7 @@ making a normal stay reservation including the location, date, number and type
 of rooms, registrant's full name, email, phone, home state or country, and
 special accommodations/comments. You will need to use the CSS flex method for
 the layout of your reservation form for full credit. -->
-<!-- The temple page describes the details for at least four temples of your choice
-providing information about the address, telephone, email, services, history,
-ordinance schedule, session schedule, temple closure schedule (from a JSON
-source), and summary—current weather information obtained from a third party
-API. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +17,7 @@ API. -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <title>Services - The Temple Inn & Suites</title>
+    <title>Revervation - The Temple Inn & Suites</title>
   </head>
   <body>
     <header>
@@ -32,128 +28,81 @@ API. -->
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="temples.html">Temples</a></li>
-        <li class="active"><a href="reservation.html">Revervation</a></li class="active">
+        <li class="active"><a href="reservation.html">Revervation</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
-      <!-- The method only is GET because github will not accept POST -->
-      <form action="form-thanks.html" method="GET">
-        <p>* required</p>
-        <div>
-          <label for="fullName">Full Name: *</label>
-          <input
-            type="text"
-            id="fullName"
-            name="fullName"
-            pattern="[A-Za-z ,.'-]{5,}"
-            title="5 letter full name"
-            required
-          />
-        </div>
-        <div>
-          <label for="email">Email: </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="user@email.com"
-          />
-        </div>
-        <div>
-          <label for="phone">Phone: *</label>
-          <input type="tel" id="phone" name="phone" required />
-        </div>
-        <div>
-          <label for="zipCode">Zip Code: *</label>
-          <input type="number" id="zipCode" name="zipCode" required />
-        </div>
-        <div>
-          <label for="stormDate">Storm Date: </label>
-          <input type="date" id="stormDate" name="stormDate" />
-        </div>
-        <div>
-          <label for="stormType">Storm Type</label>
-          <input list="stormType" />
-          <datalist id="stormType">
-            <option value="Flash Flood"> </option>
-            <option value="Hail"> </option>
-            <option value="Hurricane"> </option>
-            <option value="Thunderstom"> </option>
-            <option value="Tornado"> </option>
-            <option value="Other"> </option>
-          </datalist>
-        </div>
-        <div>
-          <label class="flexly" for="rating"
-            >Rating: &nbsp;&nbsp;&nbsp;
-            <input
-              type="range"
-              id="rating"
-              value="5"
-              min="1"
-              max="10"
-              step="1"
-              list="tickmarks"
-              oninput="adjustRating(this.value)"
-              onchange="adjustRating(this.value)"
-            />
-            <span id="ratingvalue">5</span>
-          </label>
-          <datalist id="tickmarks">
-            <option value="0"> </option>
-            <option value="1"> </option>
-            <option value="2"> </option>
-            <option value="3"> </option>
-            <option value="4"> </option>
-            <option value="5"> </option>
-            <option value="6"> </option>
-            <option value="7"> </option>
-            <option value="8"> </option>
-            <option value="9"> </option>
-            <option value="10"> </option>
-          </datalist>
-        </div>
-        <div>
-          <label for="stormRegion">Storm Region: </label>
-          <select name="stormRegion" id="stormRegion">
-            <option value="0" selected disabled>Select Region</option>
-            <option value="1">Fish Haven</option>
-            <option value="2">Preston</option>
-            <option value="3">Sugar City</option>
-          </select>
-          <br />
-        </div>
-        <div class="flex">
-          <span>Are you in danger?</span>
-          <div class="nomargin">
-            <div>
-              <input type="radio" value="Yes" name="danger" />
-              <label for="yes">Yes</label>
-            </div>
-            <div>
-              <input type="radio" value="No" name="danger" />
-              <label for="no">No</label>
-            </div>
-            <div>
-              <input type="radio" value="Maybe" name="danger" />
-              <label for="maybe">Maybe</label>
-            </div>
-          </div>
-        </div>
-        <div>
-          <label for="comments" id="align-top">Comments:</label>
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="38"
-            rows="10"
-          ></textarea>
-        </div>
-        <input type="submit" name="submit" value="Submit" />
-        <input type="reset" name="reset" value="Reset" />
-      </form>
+    <main id="reservation">
+      <h1>Reservation Form</h1>
+      <div class="container">
+        <form action="form-thanks.html" method="GET">
+          <ul class="flex-outer">
+            <h3>* Required</h3>
+            <li>
+              <label for="first-name">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter your first name here"
+                required
+              />
+            </li>
+            <li>
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter your last name here"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email here"
+                required
+              />
+            </li>
+            <li>
+              <label for="phone">Phone *</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone here"
+                required
+              />
+            </li>
+            <li>
+              <label for="location">Temple Near By</label>
+              <input list="location" />
+              <datalist id="location"> </datalist>
+            </li>
+            <li>
+              <label for="checkIn">Ckeck-in</label>
+              <input type="date" id="checkIn" name="checkIn" />
+            </li>
+            <li>
+              <label for="checkOut">Ckeck-out</label>
+              <input type="date" id="checkOut" name="checkOut" />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                rows="6"
+                id="message"
+                placeholder="Enter your message here"
+              ></textarea>
+            </li>
+            <li>
+              <button type="submit">Submit</button>
+              <button type="reset">Clear</button>
+            </li>
+          </ul>
+        </form>
+      </div>
     </main>
     <footer>
       <div>
@@ -163,17 +112,19 @@ API. -->
         <p>4800 Montgomery Ln #300, Bethesda, MD 20814<br />(800) 563-5852</p>
       </div>
       <div id="social">
-        <a href="https://www.facebook.com" target="_blank"
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
           ><img src="images/social-facebook-box-blue.ico" alt="Facebook Icon"
         /></a>
       </div>
       <div id="social">
-        <a href="https://www.instagram.com" target="_blank"
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"
           ><img src="images/cold-Fusion-Hd-Instagram.ico" alt="Instagram Icon"
         /></a>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/temple-list.js"></script>
+
   </body>
 </html>
