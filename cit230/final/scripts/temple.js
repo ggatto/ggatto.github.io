@@ -10,6 +10,9 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
+          document
+          .querySelector(`#image${templeNumeber}`)
+          .setAttribute("alt", temples.NameOfTemple);
         document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
@@ -72,6 +75,9 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
+          document
+          .querySelector(`#image${templeNumeber}`)
+          .setAttribute("alt", temples.NameOfTemple);
         document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
@@ -134,6 +140,9 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
+          document
+          .querySelector(`#image${templeNumeber}`)
+          .setAttribute("alt", temples.NameOfTemple);
         document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
@@ -196,6 +205,9 @@ fetch(requestURL).then(response => {
         document
           .querySelector(`#image${templeNumeber}`)
           .setAttribute("src", "images/" + temples.Image);
+          document
+          .querySelector(`#image${templeNumeber}`)
+          .setAttribute("alt", temples.NameOfTemple);
         document.querySelector(`#cityID-${templeNumeber}`).value =
           temples.cityID;
         document.querySelector(`#street${templeNumeber}`).textContent =
