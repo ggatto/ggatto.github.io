@@ -7,11 +7,11 @@
   "websites": [
     {
       "url": "https://docs.google.com/presentation/d/e/2PACX-1vSP8QLXi-NkAksEuF3aji-yd-w2NsZTdF84czGLSohdJneeHxNGPOu-6luT1b24dQ/pub?start=true&loop=false&delayms=5000",
-      "tabReloadIntervalSeconds": 10
+      "tabReloadIntervalSeconds": 40
     },
         {
       "url": "https://guidecx.com",
-      "tabReloadIntervalSeconds": 10
+      "tabReloadIntervalSeconds": 20
     }
   ]
 }
