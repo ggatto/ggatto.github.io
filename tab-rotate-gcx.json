@@ -11,7 +11,7 @@
     },
         {
       "url": "https://guide.cx",
-      "tabReloadIntervalSeconds": 10
+      "tabReloadIntervalSeconds": 8
     }
   ]
 }
