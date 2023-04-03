@@ -6,7 +6,6 @@
   "closeExistingTabs": true,
   "websites": [
     {
-      //"url": "https://docs.google.com/presentation/d/e/2PACX-1vSP8QLXi-NkAksEuF3aji-yd-w2NsZTdF84czGLSohdJneeHxNGPOu-6luT1b24dQ/pub?start=true&loop=true&delayms=15000",
       "url": "https://docs.google.com/presentation/d/e/2PACX-1vTr1bIoSZVuQQUyVSKPM2zUCUHBhJMMyW23SkSHosk3Kv011290t-GmG87ujCM3flO55UnMtJd6lHYO/pub?start=true&loop=true&delayms=15000"
       "tabReloadIntervalSeconds": 150
     }
